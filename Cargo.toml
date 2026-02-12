@@ -12,11 +12,3 @@ keywords = ["matrix", "simd", "avx", "linear-algebra", "performance"]
 categories = ["science", "mathematics", "algorithms"]
 
 [dependencies]
-
-[dev-dependencies]
-criterion = "0.5"
-
-[[bench]]
-name = "matmul_bench"
-path = "src/bench/matmul_bench.rs"
-harness = false
