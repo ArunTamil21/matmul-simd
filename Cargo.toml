@@ -1,0 +1,22 @@
+[package]
+name = "matmul"
+version = "0.1.0"
+edition = "2024"
+authors = ["Arun"]
+description = "Fast matrix multiplication in Rust with AVX2/AVX-512 SIMD, built from scratch"
+license = "MIT"
+repository = "https://github.com/ArunTamil21/matmul-simd"
+documentation = "https://docs.rs/matmul"
+readme = "README.md"
+keywords = ["matrix", "simd", "avx", "linear-algebra", "performance"]
+categories = ["science", "mathematics", "algorithms"]
+
+[dependencies]
+
+[dev-dependencies]
+criterion = "0.5"
+
+[[bench]]
+name = "matmul_bench"
+path = "src/bench/matmul_bench.rs"
+harness = false
