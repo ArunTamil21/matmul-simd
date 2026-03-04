@@ -15,6 +15,7 @@
 /// - `c` points to valid memory with stride `ldc`
 /// - `c.add(row * ldc)` is valid for row in 0..4, each allowing read/write of 4 f64s
 ///
+#[target_feature(enable = "avx2,fma")]
 #[allow(clippy::identity_op)]
 #[allow(clippy::erasing_op)]
 #[allow(unsafe_op_in_unsafe_fn)]
