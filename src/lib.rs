@@ -42,6 +42,7 @@ pub mod threaded;
 
 pub use matrix::naive_ijk::matmul_naive_ijk;
 pub use matrix::naive_ikj::matmul_naive_ikj;
+pub use matrix::transpose::transpose;
 
 /// Matrix multiply: C += A * B
 ///
